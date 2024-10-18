@@ -1,0 +1,152 @@
+/*-----------------------
+Base de los estilos de html
+-----------------------*/
+html{
+    font-size: 25px;
+}
+@media screen and (max-width: 400px){
+    html{
+        font-size: 8px;
+    }
+}
+html, body{
+    height: 100%;
+}
+body{
+    background:aqua;
+    font-family: "Lora", serif;
+    font-size: 1.7rem; /*10*1.7=17px*/
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.882;
+    color: #000000;
+    margin: 0;
+}
+/*----------------------------------------
+links
+----------------------------------------*/
+a{
+    color: crimson;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus, a:active{
+    color: #000000;
+}
+
+a:hover, a:active{
+    outline: 0;
+
+}
+
+/*-------------------------------
+Tipo grafia
+----------------------------------*/
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "frank Ruh1 libre", serif;
+    font-weight: 500;
+    font-style:normal ;
+    color: #000000;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+}
+
+h1,h2,h3,h4{
+    margin-top: 6rem;
+    margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width:600px){
+    h1,h2,h3,h4{
+        margin-top: 6rem;
+    }
+}
+
+h5, h6{
+    margin-top: 4rem;
+    margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width:600px){
+    h4, h5, h6{
+        margin-top: 4rem;
+        margin-bottom: 0.8rem;
+    }
+}
+p img{
+    margin: 0;
+}
+
+p .lead{
+    font-family: "lora", serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 1.833rem;
+    margin-bottom: 3.6rem;
+    color: #000000;
+}
+
+/*---------------------------------------------
+list
+---------------------------------------------*/
+ol{
+    list-style: decimal;
+}
+ul{
+    list-style: disc;
+}
+li{
+    display: list-item;
+}
+ol, ul{
+    margin-left: 1.6rem;
+}
+
+ul li{
+    padding-left: .4rem;
+}
+
+/*-------------------------------
+#heder
+-------------------------------*/
+
+.s header{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 78px;
+    border: #000000;
+    text-align: center;
+    z-index: 100;
+}
+
+.s header.sticky{
+    background-color: #050505;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*------------------------------
+#heder logo
+----------------------------------*/
+.heder-logo{
+    display: inline-block;
+    margin: 6px 0 0 0;
+    padding: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+.heder-logo a{
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    transition: all .3s;
+}
